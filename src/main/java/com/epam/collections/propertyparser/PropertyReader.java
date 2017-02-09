@@ -7,6 +7,7 @@ import java.util.HashMap;
  *
  * @author Karapetyan N.K
  */
+@SuppressWarnings("WeakerAccess")
 public class PropertyReader {
     private HashMap<String, String> hashMap = new HashMap<>();
 
@@ -19,8 +20,7 @@ public class PropertyReader {
     }
 
     public String getValue(String key){
-        String value = hashMap.get(key);
-        return value;
+        return hashMap.get(key);
     }
 
     /*
